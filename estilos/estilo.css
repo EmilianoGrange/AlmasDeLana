@@ -1,0 +1,394 @@
+/* 'Fondamento',   cursive; */
+/*
+*
+*RESET
+*
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.contenedor, .footer__contenedor {
+  width: 90%;
+  margin: 0 auto; }
+
+.titulos {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: normal;
+  font-style: italic;
+  padding: .25rem; }
+
+/*
+*
+*CLASES
+*
+*/
+.parrafosPpales {
+  line-height: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  color: black;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  box-shadow: 0 0 10px #0000001a;
+  border-radius: 0.1rem .6rem; }
+
+.separador {
+  background-image: url("../imagenes/bg.jpg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  height: 10vh;
+  margin: .2rem auto; }
+
+.btn-block {
+  background-color: #0000001a;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem; }
+  .btn-block:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffcaaf; }
+
+/*
+*
+*Estilos para el header y el menu
+*
+*/
+.header__contenedor__menu__lista {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: center; }
+
+.header__contenedor__menu__lista__item {
+  list-style-position: inside;
+  list-style-type: none;
+  background-color: #0000001a;
+  width: fit-content;
+  margin: .1rem;
+  border-radius: 0 5px;
+  align-self: center;
+  padding: 0.2rem;
+  flex: 1; }
+  .header__contenedor__menu__lista__item a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif; }
+    .header__contenedor__menu__lista__item a:visited {
+      color: currentColor; }
+    .header__contenedor__menu__lista__item a:hover {
+      color: #ffcaaf; }
+
+.header__contenedor__logo {
+  height: 75px;
+  width: 75px; }
+
+.navbar-toggler {
+  padding: .3rem;
+  font-size: 1rem; }
+
+.navbar {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: .25rem 1rem; }
+
+/*
+*
+*Estilos redes
+*
+*/
+.contacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 2pc;
+  margin: 1rem auto;
+  padding: .1rem;
+  cursor: hand; }
+  .contacto a:visited {
+    color: currentColor; }
+
+.contacto__instagram {
+  color: rebeccapurple; }
+  .contacto__instagram:hover {
+    transform: scale(1.1); }
+
+.contacto__facebook {
+  color: #455791; }
+  .contacto__facebook:hover {
+    transform: scale(1.1); }
+
+.contacto__whatsapp {
+  color: seagreen; }
+  .contacto__whatsapp:hover {
+    transform: scale(1.1); }
+
+.contacto__pinterest {
+  color: red; }
+  .contacto__pinterest:hover {
+    transform: scale(1.1); }
+
+/*
+*
+*Estilos para la tabla en productos
+*
+*/
+.table {
+  width: max-content;
+  font-size: .9rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0.5rem auto; }
+  .table .thead {
+    text-align: center;
+    padding: .5rem 1rem;
+    background-color: #0000001a; }
+  .table td {
+    vertical-align: middle;
+    text-align: center;
+    padding: .5rem 1rem; }
+    .table td ul li {
+      list-style: none;
+      list-style-position: inside;
+      margin: auto;
+      text-align: center;
+      padding: .25rem; }
+
+/*
+*
+*Estilo para GALERIA DE PRODUCTOS
+*
+*/
+.galeria-prod {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: fit-content;
+  margin: .5rem auto; }
+  .galeria-prod img {
+    max-width: 280px;
+    max-height: 240px;
+    object-fit: cover;
+    margin: .2rem auto;
+    transition: transform .5s; }
+    .galeria-prod img:hover {
+      transform: scale(1.1); }
+
+.modal-body__img {
+  object-fit: cover;
+  width: 100%; }
+
+/*
+*
+*Estilos para el FORMULARIO DE CONTACTO
+*
+*/
+.formulario .form-group {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif; }
+  .formulario .form-group .form-check .form-check-input {
+    position: relative;
+    margin-top: .3rem;
+    margin-left: .1rem; }
+  .formulario .form-group .form-control {
+    height: calc(1.4em + .5rem + 2px);
+    width: 85%;
+    margin-left: 3px;
+    font-size: 0.9em; }
+  .formulario .form-group article {
+    margin: 0.2rem;
+    padding: 0.1rem; }
+  .formulario .form-group fieldset {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    width: 50%; }
+  .formulario .form-group textarea {
+    margin: 0.2rem auto;
+    padding: 0.1rem;
+    max-width: 80%;
+    min-height: 25vh; }
+
+/*
+*
+*Estilos para el FOOTER
+*
+*/
+.footer {
+  background-color: #ffcaaf;
+  font-style: italic; }
+
+.footer__contenedor {
+  padding: .2rem; }
+
+.footer__contenedor__redesWeb {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto; }
+
+.footer__contenedor__redesWeb__a {
+  margin: auto;
+  padding: .5rem; }
+  .footer__contenedor__redesWeb__a:visited {
+    color: currentColor; }
+
+/*
+*
+*Otras Etiquetas
+*
+*/
+main {
+  margin-top: 85px; }
+
+h1 {
+  font-size: 2rem;
+  text-decoration: dashed underline 2px; }
+
+h2 {
+  font-size: 1.5rem; }
+
+p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  margin: 0rem 0.1rem; }
+
+span {
+  font-style: italic;
+  font-weight: bold; }
+
+iframe {
+  max-width: 100%; }
+
+/*
+*
+* MEDIA QUERIES
+*
+*/
+@media screen and (min-width: 1000px) {
+  .contenedor, .footer__contenedor {
+    max-width: 1600px; }
+  /*
+    *
+    *Estilos para el header y el menu
+    *
+    */
+  .header__contenedor__menu__lista {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+  .header__contenedor__menu__lista__item {
+    text-align: center;
+    background-color: #0000001a;
+    padding: .3rem;
+    margin: 0 .2rem;
+    border-radius: 20px; }
+    .header__contenedor__menu__lista__item a {
+      font-size: .9rem; }
+  /*
+    *
+    *Estilos redes flotantes
+    *
+    */
+  .contacto {
+    position: fixed;
+    z-index: 1;
+    top: 12rem;
+    left: .1rem;
+    display: block;
+    width: 2pc;
+    height: 25vh;
+    line-height: 2pc;
+    padding: .1rem;
+    margin: .1rem;
+    cursor: hand; }
+    .contacto a:visited {
+      color: currentColor; }
+  .contacto__instagram:hover {
+    transform: translateX(0.3rem); }
+  .contacto__facebook:hover {
+    transform: translateX(0.3rem); }
+  .contacto__whatsapp:hover {
+    transform: translateX(0.3rem); }
+  .contacto__pinterest:hover {
+    transform: translateX(0.3rem); }
+  /*
+    *
+    *Estilo para GALERIA DE PRODUCTOS
+    *
+    */
+  .galeria-prod {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    grid-template-areas: "pumpkins na1 na2" "na3 hipo na4" "na5 na6 bunny";
+    height: auto; }
+  .galeria-prod__pumpkins {
+    grid-area: pumpkins; }
+  .galeria-prod__hipo {
+    grid-area: hipo; }
+  .galeria-prod__bunny {
+    grid-area: bunny; }
+  .galeria-prod__na1 {
+    grid-area: na1; }
+  .galeria-prod__na2 {
+    grid-area: na2; }
+  .galeria-prod__na3 {
+    grid-area: na3; }
+  .galeria-prod__na4 {
+    grid-area: na4; }
+  .galeria-prod__na5 {
+    grid-area: na5; }
+  .galeria-prod__na6 {
+    grid-area: na6; }
+  /*
+    *
+    *Estilos para el FORMULARIO DE CONTACTO
+    *
+    */
+  .formulario .form-group fieldset {
+    margin: 0.2rem;
+    width: 30%; }
+  .formulario .form-group textarea {
+    max-width: 50%; }
+  /*
+    *
+    *Estilos para el FOOTER
+    *
+    */
+  .footer__contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+    grid-template-areas: "datos redes";
+    height: auto; }
+  .footer__contenedor__datosWeb {
+    grid-area: datos; }
+  .footer__contenedor__redesWeb {
+    grid-area: redes; }
+  .footer__contenedor__redesWeb__a {
+    padding: 1rem; }
+  /*
+    *
+    *Otras Etiquetas
+    *
+    */
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 2rem; }
+  p {
+    font-size: 1rem; } }
