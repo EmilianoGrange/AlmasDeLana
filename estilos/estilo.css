@@ -80,6 +80,8 @@
     line-height: 1rem;
     font-size: 0.8rem;
     font-family: "Montserrat", sans-serif; }
+    .header__contenedor__menu__lista__item a:link {
+      color: black; }
     .header__contenedor__menu__lista__item a:visited {
       color: currentColor; }
     .header__contenedor__menu__lista__item a:hover {
@@ -96,7 +98,11 @@
 .navbar {
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: .25rem 1rem; }
+  padding: .25rem 1rem;
+  background-color: white; }
+
+.desplegable {
+  background-color: white; }
 
 /*
 *
@@ -112,28 +118,18 @@
   margin: 1rem auto;
   padding: .1rem;
   cursor: hand; }
-  .contacto a:visited {
-    color: currentColor; }
 
-.contacto__instagram {
-  color: rebeccapurple; }
-  .contacto__instagram:hover {
-    transform: scale(1.1); }
+.contacto__instagram:hover {
+  transform: scale(1.1); }
 
-.contacto__facebook {
-  color: #455791; }
-  .contacto__facebook:hover {
-    transform: scale(1.1); }
+.contacto__facebook:hover {
+  transform: scale(1.1); }
 
-.contacto__whatsapp {
-  color: seagreen; }
-  .contacto__whatsapp:hover {
-    transform: scale(1.1); }
+.contacto__whatsapp:hover {
+  transform: scale(1.1); }
 
-.contacto__pinterest {
-  color: red; }
-  .contacto__pinterest:hover {
-    transform: scale(1.1); }
+.contacto__pinterest:hover {
+  transform: scale(1.1); }
 
 /*
 *
@@ -239,6 +235,8 @@
 .footer__contenedor__redesWeb__a {
   margin: auto;
   padding: .5rem; }
+  .footer__contenedor__redesWeb__a:link {
+    color: black; }
   .footer__contenedor__redesWeb__a:visited {
     color: currentColor; }
 
@@ -311,18 +309,15 @@ iframe {
     height: 25vh;
     line-height: 2pc;
     padding: .1rem;
-    margin: .1rem;
     cursor: hand; }
-    .contacto a:visited {
-      color: currentColor; }
   .contacto__instagram:hover {
-    transform: translateX(0.3rem); }
+    transform: translateX(0.2rem); }
   .contacto__facebook:hover {
-    transform: translateX(0.3rem); }
+    transform: translateX(0.2rem); }
   .contacto__whatsapp:hover {
-    transform: translateX(0.3rem); }
+    transform: translateX(0.2rem); }
   .contacto__pinterest:hover {
-    transform: translateX(0.3rem); }
+    transform: translateX(0.2rem); }
   /*
     *
     *Estilo para GALERIA DE PRODUCTOS

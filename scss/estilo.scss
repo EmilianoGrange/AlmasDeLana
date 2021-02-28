@@ -81,6 +81,10 @@
             family: $fuente_1;
         }
 
+        &:link {
+            color: black;
+        }
+
         &:visited {
             color: currentColor;
         }
@@ -105,6 +109,11 @@
     flex-wrap: nowrap;
 	justify-content: space-between;
 	padding: .25rem 1rem;
+    background-color: white;
+}
+
+.desplegable {
+    background-color: white;
 }
 
 
@@ -120,42 +129,22 @@
     margin: 1rem auto;
     padding: .1rem;
     cursor: hand;
-
-    a:visited {
-        color: currentColor;
-    }
 }
 
-.contacto__instagram {
-    color: rgb(102, 51, 153);
-
-    &:hover {
-        transform: scale(1.1);
-    }
+.contacto__instagram:hover {
+    transform: scale(1.1);
 }
 
-.contacto__facebook {
-    color: rgb(69, 87, 145);
-
-    &:hover {
-        transform: scale(1.1);
-    }
+.contacto__facebook:hover {
+    transform: scale(1.1);
 }
 
-.contacto__whatsapp {
-    color: rgb(46, 139, 87);
-
-    &:hover {
-        transform: scale(1.1);
-    }
+.contacto__whatsapp:hover {
+    transform: scale(1.1);
 }
 
-.contacto__pinterest {
-    color: rgb(255, 0, 0);
-
-    &:hover {
-        transform: scale(1.1);
-    }
+.contacto__pinterest:hover {
+    transform: scale(1.1);
 }
 
 /*
@@ -300,6 +289,10 @@
     margin: auto;
     padding: .5rem;
 
+    &:link {
+        color: black;
+    }
+
     &:visited {
         color: currentColor;
     }
@@ -393,36 +386,23 @@ iframe {
         height: 25vh;
         line-height: 2pc;
         padding: .1rem;
-        margin: .1rem;
         cursor: hand;
-
-        a:visited {
-            color: currentColor;
-        }
     }
 
-    .contacto__instagram {
-        &:hover {
-            transform: translateX(.3rem);
-        }
+    .contacto__instagram:hover {
+        transform: translateX(.2rem);
     }
 
-    .contacto__facebook {
-        &:hover {
-            transform: translateX(.3rem);
-        }
+    .contacto__facebook:hover {
+        transform: translateX(.2rem);
     }
 
-    .contacto__whatsapp {
-        &:hover {
-            transform: translateX(.3rem);
-        }
+    .contacto__whatsapp:hover {
+        transform: translateX(.2rem);
     }
 
-    .contacto__pinterest {
-        &:hover {
-            transform: translateX(.3rem);
-        }
+    .contacto__pinterest:hover {
+        transform: translateX(.2rem);
     }
 
     /*
