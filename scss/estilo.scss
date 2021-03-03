@@ -149,6 +149,18 @@
 
 /*
 *
+*Estilos para carrusel
+*
+*/
+
+.carousel-item img {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+}
+
+/*
+*
 *Estilos para la tabla en productos
 *
 */
@@ -198,8 +210,9 @@
     margin: .5rem auto;
 
     img {
-        max-width: 280px;
-        max-height: 240px;
+        width: 260px;
+        max-width: 100%;
+        height: 260px;
         object-fit: cover;
         margin: .2rem auto;
         transition: transform .5s;
@@ -210,7 +223,18 @@
     }
 }
 
+.modal-header {
+    padding: .2rem;
+    padding-right: .6rem;
+}
+
+.modal-body {
+    background-color: $color_1;
+    padding: .8rem;
+}
+
 .modal-body__img {
+    border-radius: 2rem;
     object-fit: cover;
     width: 100%;
 }
@@ -407,53 +431,83 @@ iframe {
 
     /*
     *
+    *Estilos para carrusel
+    *
+    */
+
+    .carousel-inner {
+        max-width: 75%;
+        margin: auto;
+        margin-top: 6rem;
+    }
+
+    .carousel-item img {
+        width: 500px;
+        height: 550px;
+    }
+
+    /*
+    *
     *Estilo para GALERIA DE PRODUCTOS
     *
     */
 
     .galeria-prod {
-        @include grid (repeat(3, 1fr), repeat(3, 1fr), 1rem);
+        @include grid (repeat(3, 1fr), repeat(4, 1fr), 1rem);
         grid-template-areas:
-            "pumpkins na1 na2"
-            "na3 hipo na4"
-            "na5 na6 bunny";
+            "mariposas perro pulpos"
+            "rana unicornio-1 ma"
+            "jirafa tortugas zorro"
+            "pica trapo celeste";
         height: auto;
     }
 
-    .galeria-prod__pumpkins {
-        grid-area: pumpkins;
+    .galeria-prod__mariposas {
+        grid-area: mariposas;
     }
 
-    .galeria-prod__hipo {
-        grid-area: hipo;
+    .galeria-prod__perrito {
+        grid-area: perro;
     }
 
-    .galeria-prod__bunny {
-        grid-area: bunny;
+    .galeria-prod__pulpos {
+        grid-area: pulpos;
     }
 
-    .galeria-prod__na1 {
-        grid-area: na1;
+    .galeria-prod__rana {
+        grid-area: rana;
     }
 
-    .galeria-prod__na2 {
-        grid-area: na2;
+    .galeria-prod__unicornio {
+        grid-area: unicornio-1;
     }
 
-    .galeria-prod__na3 {
-        grid-area: na3;
+    .galeria-prod__ma {
+        grid-area: ma;
     }
 
-    .galeria-prod__na4 {
-        grid-area: na4;
+    .galeria-prod__jirafa {
+        grid-area: jirafa;
     }
 
-    .galeria-prod__na5 {
-        grid-area: na5;
+    .galeria-prod__tortugas {
+        grid-area: tortugas;
     }
 
-    .galeria-prod__na6 {
-        grid-area: na6;
+    .galeria-prod__zorro {
+        grid-area: zorro;
+    }
+
+    .galeria-prod__picaportero {
+        grid-area: pica;
+    }
+
+    .galeria-prod__mtrapo {
+        grid-area: trapo;
+    }
+
+    .galeria-prod__u-celeste {
+        grid-area: celeste;
     }
 
     /*
