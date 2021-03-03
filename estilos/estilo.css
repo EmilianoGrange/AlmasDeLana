@@ -137,8 +137,7 @@
 *
 */
 .carousel-item img {
-  width: 360px;
-  height: 360px;
+  height: 500px;
   object-fit: cover; }
 
 /*
@@ -201,6 +200,15 @@
   border-radius: 2rem;
   object-fit: cover;
   width: 100%; }
+
+.btn-modal {
+  margin-left: 1rem;
+  margin-top: 3rem;
+  position: fixed;
+  z-index: 1;
+  font-family: "Montserrat", sans-serif; }
+  .btn-modal:hover {
+    background-color: #0000001a; }
 
 /*
 *
