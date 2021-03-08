@@ -176,6 +176,7 @@
 
 .table {
     width: max-content;
+    max-width: 100%;
     font: {
         size: .9rem;
         family: $fuente_1;
@@ -390,6 +391,23 @@ span {
 
 iframe {
     max-width: 100%;
+}
+
+details {
+    line-height: 2rem;
+    text-align: justify;
+    text-justify: auto;
+    color: black;
+    font: {
+        size: .9rem;
+        family: $fuente_1;
+    }
+    ul {
+        list-style-position: inside;
+        list-style-type: disc;
+        margin: .1rem;
+        padding: 0.2rem;
+    }
 }
 
 /*
