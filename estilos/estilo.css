@@ -27,7 +27,7 @@
 .parrafosPpales {
   line-height: 2rem;
   text-align: justify;
-  text-justify: newspaper;
+  text-justify: auto;
   color: black;
   font-size: .9rem;
   font-family: "Montserrat", sans-serif;
@@ -142,13 +142,12 @@
   margin: auto;
   width: 90%;
   height: fit-content;
-  overflow: hidden;
-  background-color: #ffcaaf; }
+  overflow: hidden; }
 
 .carousel-item img {
   width: 100%;
-  height: 80vh;
-  object-fit: contain; }
+  height: 360px;
+  object-fit: cover; }
 
 /*
 *
@@ -297,7 +296,8 @@ h1 {
   font-size: 2rem;
   color: #ffcaaf;
   background-color: rgba(0, 0, 0, 0.4);
-  width: max-content; }
+  width: max-content;
+  max-width: 90%; }
 
 h2 {
   font-size: 1.5rem; }
@@ -371,9 +371,11 @@ iframe {
     *
     */
   .carousel-inner {
-    margin-top: 6rem; }
+    margin-top: 6rem;
+    background-color: #ffcaaf; }
     .carousel-inner img {
-      height: 90vh; }
+      height: 90vh;
+      object-fit: contain; }
   /*
     *
     *Estilo para GALERIA DE PRODUCTOS

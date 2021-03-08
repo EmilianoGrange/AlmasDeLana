@@ -16,7 +16,7 @@
 .parrafosPpales {
     line-height: 2rem;
     text-align: justify;
-    text-justify: newspaper;
+    text-justify: auto;
     color: black;
     font: {
         size: .9rem;
@@ -160,13 +160,12 @@
     width: 90%;
     height: fit-content;
     overflow: hidden;
-    background-color: $color_1;
 }
 
 .carousel-item img {
     width: 100%;
-    height: 80vh;
-    object-fit: contain;
+    height: 360px;
+    object-fit: cover;
 }
 
 /*
@@ -367,6 +366,7 @@ h1 {
     color: $color_1;
     background-color: $color_3;
     width: max-content;
+    max-width: 90%;
 }
 
 h2 {
@@ -469,9 +469,11 @@ iframe {
 
     .carousel-inner {
         margin-top: 6rem;
+        background-color: $color_1;
 
         img {
             height: 90vh;
+            object-fit: contain;
         }
     }
 
