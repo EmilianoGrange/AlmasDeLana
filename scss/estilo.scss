@@ -14,7 +14,7 @@
 }
 
 .parrafosPpales {
-    line-height: 2rem;
+    line-height: 1.5rem;
     text-align: justify;
     text-justify: auto;
     color: black;
@@ -23,7 +23,7 @@
         family: $fuente_1;
     }
     padding: 0.2rem;
-    margin: 0.2rem auto;
+    margin: auto 0.2rem;
 }
 
 .separador {
@@ -40,7 +40,7 @@
     color: black;
     font: {
         family: $fuente_1;
-        size: 1rem;
+        size: .9rem;
     }
     margin: auto;
     width: fit-content;
@@ -48,6 +48,13 @@
     &:hover {
         background-color: $color_3;
         color: $color_1;
+    }
+}
+
+.popover-body {
+    font: {
+        size: .9rem;
+        family: $fuente_1;
     }
 }
 
@@ -189,6 +196,7 @@
         text-align: center;
         padding: .5rem 1rem;
         background-color: $color_2;
+        font-size: 1rem;
     }
 
     td {
@@ -396,7 +404,7 @@ iframe {
 }
 
 details {
-    line-height: 2rem;
+    line-height: 1.5rem;
     text-align: justify;
     text-justify: auto;
     color: black;
@@ -422,6 +430,11 @@ details {
 
     .contenedor {
         max-width: 1600px;
+    }
+
+    .parrafosPpales {
+        line-height: 2rem;
+        font-size: 1rem;
     }
 
     /*
@@ -624,6 +637,11 @@ details {
     }
 
     p {
+        font-size: 1rem;
+    }
+
+    details {
+        line-height: 2rem;
         font-size: 1rem;
     }
 
