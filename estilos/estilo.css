@@ -161,18 +161,19 @@
 .table {
   width: max-content;
   max-width: 100%;
-  font-size: .9rem;
-  font-family: "Montserrat", sans-serif;
   margin: 1rem auto; }
   .table .thead {
     text-align: center;
     padding: .5rem 1rem;
     background-color: #0000001a;
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif; }
   .table td {
     vertical-align: middle;
     text-align: center;
-    padding: .5rem 1rem; }
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    font-family: "Montserrat", sans-serif; }
     .table td ul li {
       list-style: none;
       list-style-position: inside;

@@ -185,24 +185,26 @@
 .table {
     width: max-content;
     max-width: 100%;
-    font: {
-        size: .9rem;
-        family: $fuente_1;
-    }
-
     margin: 1rem auto;
 
     .thead {
         text-align: center;
         padding: .5rem 1rem;
         background-color: $color_2;
-        font-size: 1rem;
+        font: {
+            size: 1rem;
+            family: $fuente_1;
+        }
     }
 
     td {
         vertical-align: middle;
         text-align: center;
         padding: .5rem 1rem;
+        font: {
+            size: .9rem;
+            family: $fuente_1;
+        }
 
         ul {
             li {
