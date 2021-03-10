@@ -13,6 +13,11 @@
     @extend %headers;
 }
 
+.row {
+    margin-left: 0;
+    justify-content: space-between;
+}
+
 .parrafosPpales {
     line-height: 1.5rem;
     text-align: justify;
@@ -275,6 +280,10 @@
     font-family: $fuente_1;
 }
 
+.foto_who {
+    object-fit: cover;
+}
+
 /*
 *
 *Estilos para el FORMULARIO DE CONTACTO
@@ -321,6 +330,14 @@
             max-width: 80%;
             min-height: 25vh;
         }
+    }
+
+    .btn-enviar {
+        background-color: $color_5;
+    }
+
+    .btn-borrar {
+        background-color: $color_6;
     }
 }
 

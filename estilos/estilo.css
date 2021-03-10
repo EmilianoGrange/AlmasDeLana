@@ -24,6 +24,10 @@
 *CLASES
 *
 */
+.row {
+  margin-left: 0;
+  justify-content: space-between; }
+
 .parrafosPpales {
   line-height: 1.5rem;
   text-align: justify;
@@ -229,6 +233,9 @@
   .btn-modal:hover {
     background-color: #0000001a; }
 
+.foto_who {
+  object-fit: cover; }
+
 /*
 *
 *Estilos para el FORMULARIO DE CONTACTO
@@ -259,6 +266,12 @@
     padding: 0.1rem;
     max-width: 80%;
     min-height: 25vh; }
+
+.formulario .btn-enviar {
+  background-color: #b0f6f2; }
+
+.formulario .btn-borrar {
+  background-color: #ff8084; }
 
 /*
 *
