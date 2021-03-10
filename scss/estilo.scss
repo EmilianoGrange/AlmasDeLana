@@ -14,7 +14,6 @@
 }
 
 .row {
-    margin-left: 0;
     justify-content: space-between;
 }
 
@@ -189,7 +188,7 @@
 
 .table {
     width: max-content;
-    max-width: 100%;
+    max-width: 95%;
     margin: 1rem auto;
 
     .thead {
@@ -278,10 +277,6 @@
         background-color: $color_2;
     }
     font-family: $fuente_1;
-}
-
-.foto_who {
-    object-fit: cover;
 }
 
 /*

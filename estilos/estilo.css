@@ -25,7 +25,6 @@
 *
 */
 .row {
-  margin-left: 0;
   justify-content: space-between; }
 
 .parrafosPpales {
@@ -164,7 +163,7 @@
 */
 .table {
   width: max-content;
-  max-width: 100%;
+  max-width: 95%;
   margin: 1rem auto; }
   .table .thead {
     text-align: center;
@@ -232,9 +231,6 @@
   font-family: "Montserrat", sans-serif; }
   .btn-modal:hover {
     background-color: #0000001a; }
-
-.foto_who {
-  object-fit: cover; }
 
 /*
 *
