@@ -234,6 +234,27 @@
 
 /*
 *
+*Estilos en Quienes Somos
+*
+*/
+.parallax {
+  background-image: url("../imagenes/tejiendo.jpg");
+  min-height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .parallax .parrafosPpales {
+    margin: 8rem 6rem;
+    width: 80%;
+    max-width: fit-content;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+/*
+*
 *Estilos para el FORMULARIO DE CONTACTO
 *
 */
@@ -310,7 +331,7 @@ main {
 
 h1 {
   font-size: 2rem;
-  background-color: #0000001a;
+  font-weight: bold;
   width: max-content;
   max-width: 90%; }
 
@@ -444,6 +465,16 @@ details {
     grid-area: celeste; }
   /*
     *
+    *Estilos en Quienes Somos
+    *
+    */
+  .parallax {
+    min-height: 75vh; }
+    .parallax .parrafosPpales {
+      margin: 10rem;
+      font-size: 1.5rem; }
+  /*
+    *
     *Estilos para el FORMULARIO DE CONTACTO
     *
     */
@@ -486,3 +517,10 @@ details {
   details {
     line-height: 2rem;
     font-size: 1rem; } }
+
+@media screen and (max-width: 270px) {
+  .parallax {
+    background-image: none;
+    height: 0; }
+    .parallax .parrafosPpales {
+      margin: auto; } }
