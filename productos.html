@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Almas de Lana es un emprendimiento de amigurumis a crochet para bebes y niños.">
+    <meta name="description" content="Almas de Lana es un emprendimiento de amigurumis a crochet para bebes y niños, y otros productos tejidos. Vendemos nuestros tejidos." />
     <meta name="keywords"
-        content="amigurumis, crochet, tejidos, lana, bebes, niños, artesanales, Mar del Plata, patrones, ventas, apego, muñecos, tutoriales">
-    <title>Almas de Lana</title>
+        content="amigurumis, crochet, tejidos, lana, bebes, niños, artesanales, Mar del Plata, patrones, ventas, apego, muñecos, tutoriales, contacto, consulta" />
+    <title>Almas de Lana | Productos</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -23,14 +23,14 @@
 </head>
 
 <body>
-    <header class="header" id="header">
+    <header class="encabezado" id="encabezado">
         <div class="fixed-top">
-            <nav class="navbar navbar-light">
+            <nav class="navbar navbar-light barra">
                 <div class="contenedor">
-                    <a class="anclaLogo" href="index.html"><img class="header__contenedor__logo" src="imagenes/logo.png"
+                    <a class="ancla-logo" href="index.html"><img class="logo" src="imagenes/logo.png"
                             alt="logo" /></a>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler boton-nav" type="button" data-toggle="collapse"
                     data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,110 +38,112 @@
             </nav>
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="desplegable p-4">
-                    <ul class="header__contenedor__menu__lista contenedor">
-                        <li class="header__contenedor__menu__lista__item"><a href="index.html">Home</a></li>
-                        <li class="header__contenedor__menu__lista__item"><a href="productos.html">Productos</a></li>
-                        <li class="header__contenedor__menu__lista__item"><a href="servicios.html">Servicios</a></li>
-                        <li class="header__contenedor__menu__lista__item"><a href="quienes_somos.html">Quienes somos</a>
+                    <ul class="menu-lista contenedor">
+                        <li class="menu-item">
+                            <a href="index.html">Home</a>
                         </li>
-                        <li class="header__contenedor__menu__lista__item"><a href="contacto.html">Contacto</a></li>
+                        <li class="menu-item">
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="quienes_somos.html">Quienes somos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="main">
+    <main>
         <div class="contenedor">
-            <div class="contacto">
-                <a href="https://www.instagram.com/"><img src="imagenes/IG.png" class="contacto__instagram"
-                        alt="logo instagram"></a>
-                <a href="http://www.facebook.com"><img src="imagenes/FB.png" class="contacto__facebook"
-                        alt="logo facebook"></a>
-                <a href="https://web.whatsapp.com"><img src="imagenes/WP.png" class="contacto__whatsapp"
-                        alt="logo whatsapp"></a>
-                <a href="https://ar.pinterest.com/"><img src="imagenes/Pi.png" class="contacto__pinterest"
-                        alt="logo pinterest"></a>
+            <div class="redes-flotantes">
+                <a href="https://www.instagram.com/"><img src="imagenes/IG.png" alt="logo instagram" /></a>
+                <a href="http://www.facebook.com"><img src="imagenes/FB.png" alt="logo facebook" /></a>
+                <a href="https://web.whatsapp.com"><img src="imagenes/WP.png" alt="logo whatsapp" /></a>
+                <a href="https://ar.pinterest.com/"><img src="imagenes/Pi.png" alt="logo pinterest" /></a>
             </div>
 
             <h1 class="titulos">Conoce nuestros productos</h1>
 
-            <table class="table table-sm table-bordered">
-                <tr class="thead">
-                    <th>Producto</th>
-                    <th>Propiedades</th>
-                </tr>
-                <tr>
-                    <td>Amigurumi</td>
-                    <td>
-                        <ul>
-                            <li>Realizados 100% con hilo de algodón</li>
-                            <li>Rellenos de vellón siliconado premium</li>
-                            <li>Hipoalergénicos y biodegradables</li>
-                            <li>Lavables a mano o en lavarropa en delicado</li>
-                            <li>Hechos a mano, lo que los hace únicos (*)</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Gorros y bufandas</td>
-                    <td>
-                        <ul>
-                            <li>Realizados con cashmilon mercerizado o lana Merino</li>
-                            <li>Lavables a mano o en lavarropa en delicado/lana</li>
-                            <li>No pican ni irritan</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+            <section class="descripcion">
+                <div class="card cartas">
+                    <div class="card-header card-tit">
+                        Amigurumi
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Realizados 100% con hilo de algodón</li>
+                        <li class="list-group-item">Rellenos de vellón siliconado premium</li>
+                        <li class="list-group-item">Hipoalergénicos y biodegradables</li>
+                        <li class="list-group-item">Lavables a mano o en lavarropa en delicado</li>
+                        <li class="list-group-item">Hechos a mano, lo que los hace únicos (*)</li>
+                    </ul>
+                </div>
 
-            <p class="parrafosPpales">(*) Siempre vas a encontrar fotos actualizadas con los modelos disponibles al momento de tu compra.</p>
+                <div class="card cartas">
+                    <div class="card-header card-tit">
+                        Gorros y bufandas
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Realizados con cashmilon mercerizado o lana Merino</li>
+                        <li class="list-group-item">Lavables a mano o en lavarropa en delicado/lana</li>
+                        <li class="list-group-item">No pican ni irritan</li>
+                    </ul>
+                </div>
+            </section>
+
+            <p class="parrafos-ppales">(*) Siempre vas a encontrar fotos actualizadas con los modelos disponibles al momento de tu compra.</p>
 
             <div class="separador"></div>
 
             <h2 class="titulos">Galería</h2>
-            <section class="galeria-prod" id="galeria">
-                <img class="galeria-prod__mariposas" src="imagenes/galeria/mariposas.jpg" alt="mariposas multicolor"
+            <section class="galeria-prod container" id="galeria">
+                <img class="gp-mariposas" src="imagenes/galeria/mariposas.jpg" alt="mariposas multicolor"
                     data-toggle="modal" data-target="#mariposas">
-                <img class="galeria-prod__perrito" src="imagenes/galeria/perrito.jpg" alt="perrito beige"
+                <img class="gp-perrito" src="imagenes/galeria/perrito.jpg" alt="perrito beige"
                     data-toggle="modal" data-target="#perrito">
-                <img class="galeria-prod__pulpos" src="imagenes/galeria/pulpos.jpg" alt="pulpos espaciales"
+                <img class="gp-pulpos" src="imagenes/galeria/pulpos.jpg" alt="pulpos espaciales"
                     data-toggle="modal" data-target="#pulpos">
-                <img class="galeria-prod__rana" src="imagenes/galeria/rana.jpg" alt="rana con abrigo"
+                <img class="gp-rana" src="imagenes/galeria/rana.jpg" alt="rana con abrigo"
                     data-toggle="modal" data-target="#rana">
-                <img class="galeria-prod__hipo" src="imagenes/galeria/unicornio.jpg" alt="unicornio colorido"
+                <img class="gp-hipo" src="imagenes/galeria/unicornio.jpg" alt="unicornio colorido"
                     data-toggle="modal" data-target="#unicornio">
-                <img class="galeria-prod__ma" src="imagenes/galeria/m-aradiya.jpg" alt="muñecas aradiya"
+                <img class="gp-marad" src="imagenes/galeria/m-aradiya.jpg" alt="muñecas aradiya"
                     data-toggle="modal" data-target="#aradiya">
-                <img class="galeria-prod__jirafa" src="imagenes/galeria/jirafa.jpg" alt="jirafa sentada"
+                <img class="gp-jirafa" src="imagenes/galeria/jirafa.jpg" alt="jirafa sentada"
                     data-toggle="modal" data-target="#jirafa">
-                <img class="galeria-prod__tortugas" src="imagenes/galeria/tortugas.jpg" alt="tortugas marinas"
+                <img class="gp-tortugas" src="imagenes/galeria/tortugas.jpg" alt="tortugas marinas"
                     data-toggle="modal" data-target="#tortugas">
-                <img class="galeria-prod__zorro" src="imagenes/galeria/jirafa+zorro.jpg" alt="zorro y jirafa"
+                <img class="gp-zorro" src="imagenes/galeria/jirafa+zorro.jpg" alt="zorro y jirafa"
                     data-toggle="modal" data-target="#zorro">
-                <img class="galeria-prod__picaportero" src="imagenes/galeria/picaportero.jpg" alt="picaportero"
+                <img class="gp-picaportero" src="imagenes/galeria/picaportero.jpg" alt="picaportero"
                     data-toggle="modal" data-target="#picaportero">
-                <img class="galeria-prod__mtrapo" src="imagenes/galeria/m-de-trapo.jpg" alt="muñecos de trapo"
+                <img class="gp-mtrapo" src="imagenes/galeria/m-de-trapo.jpg" alt="muñecos de trapo"
                     data-toggle="modal" data-target="#trapo">
-                <img class="galeria-prod__u-celeste" src="imagenes/galeria/unicornio-celeste.jpg"
+                <img class="gp-u-celeste" src="imagenes/galeria/unicornio-celeste.jpg"
                     alt="unicornio celeste" data-toggle="modal" data-target="#uceleste">
             </section>
 
             <div class="modal fade" id="mariposas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right"
                                 data-content="Mariposa grande: $1300 Pequeñas: $800">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/mariposas.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/mariposas.jpg"
                                 alt="mariposas multicolor" />
                         </div>
                     </div>
@@ -151,17 +153,17 @@
             <div class="modal fade" id="perrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right" data-content="Puchero, el perrito $1200">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/perrito.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/perrito.jpg"
                                 alt="perrito beige" />
                         </div>
                     </div>
@@ -171,18 +173,18 @@
             <div class="modal fade" id="pulpos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right"
                                 data-content="Pulpos interplanetarios $900">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/pulpos.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/pulpos.jpg"
                                 alt="pulpos espaciales" />
                         </div>
                     </div>
@@ -192,18 +194,18 @@
             <div class="modal fade" id="rana" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right"
                                 data-content="Claudia, la rana con piloto $1300">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/rana.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/rana.jpg"
                                 alt="rana con abrigo" />
                         </div>
                     </div>
@@ -213,17 +215,17 @@
             <div class="modal fade" id="unicornio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right" data-content="Xara, el unicornio $1260">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/unicornio.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/unicornio.jpg"
                                 alt="unicornio colorido" />
                         </div>
                     </div>
@@ -233,17 +235,17 @@
             <div class="modal fade" id="aradiya" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right" data-content="Arcangeles aradiya $1100">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/m-aradiya.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/m-aradiya.jpg"
                                 alt="muñecas aradiya" />
                         </div>
                     </div>
@@ -253,17 +255,17 @@
             <div class="modal fade" id="jirafa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right" data-content="Pancha, la jirafa $1100">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/jirafa.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/jirafa.jpg"
                                 alt="jirafa sentada" />
                         </div>
                     </div>
@@ -273,17 +275,17 @@
             <div class="modal fade" id="tortugas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right" data-content="Tortugas soñolientas $750">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/tortugas.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/tortugas.jpg"
                                 alt="tortugas marinas" />
                         </div>
                     </div>
@@ -293,17 +295,17 @@
             <div class="modal fade" id="zorro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right" data-content="Afa y el zorro Ao $1120 c/u">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/jirafa+zorro.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/jirafa+zorro.jpg"
                                 alt="zorro y jirafa" />
                         </div>
                     </div>
@@ -314,17 +316,17 @@
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right" data-content="Picaportero $875">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/picaportero.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/picaportero.jpg"
                                 alt="picaportero" />
                         </div>
                     </div>
@@ -334,18 +336,18 @@
             <div class="modal fade" id="trapo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right"
                                 data-content="Muñecas de trapo Consultar precios y modelos">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/m-de-trapo.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/m-de-trapo.jpg"
                                 alt="muñecos de trapo" />
                         </div>
                     </div>
@@ -355,18 +357,18 @@
             <div class="modal fade" id="uceleste" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header mod-h">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body mod-b">
                             <button type="button" class="btn btn-modal btn-secondary" data-container="body"
                                 data-toggle="popover" data-placement="right"
                                 data-content="Caballito, el unicornio $1230">
-                                Info
+                                Ver producto
                             </button>
-                            <img class="modal-body__img img-fluid" src="imagenes/galeria/unicornio-celeste.jpg"
+                            <img class="img-fluid" src="imagenes/galeria/unicornio-celeste.jpg"
                                 alt="unicornio celeste" />
                         </div>
                     </div>
@@ -375,26 +377,24 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="footer__contenedor">
+    <footer class="pie">
+        <div class="contenedor">
 
-            <a href="#header" class="footer__contenedor__ancla-up"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+            <a href="#encabezado" class="ancla-up"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
 
-            <section class="footer__contenedor__datosWeb">
-                <i class="fas fa-map-marked-alt"></i><p class="footer__contenedor__datosWeb__p">Constitución 6084, Mar del Plata</p>
-                <i class="fas fa-envelope"></i><p class="footer__contenedor__datosWeb__p">almasdelana@outlook.com</p>
-                <p class="footer__contenedor__datosWeb__p">© 2021 Emiliano Grange ® | Todos los derechos reservados</p>
+            <section class="datos-web">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Constitución 6084, Mar del Plata</p>
+                <i class="fas fa-envelope"></i>
+                <p>almasdelana@outlook.com</p>
+                <p>© 2021 Emiliano Grange ® | Todos los derechos reservados</p>
             </section>
 
-            <section class="footer__contenedor__redesWeb">
-                <a class="footer__contenedor__redesWeb__a" href="https://www.instagram.com/"><i
-                        class="fab fa-instagram fa-2x"></i></a>
-                <a class="footer__contenedor__redesWeb__a" href="http://www.facebook.com"><i
-                        class="fab fa-facebook fa-2x"></i></a>
-                <a class="footer__contenedor__redesWeb__a" href="https://web.whatsapp.com"><i
-                        class="fab fa-whatsapp fa-2x"></i></a>
-                <a class="footer__contenedor__redesWeb__a" href="https://ar.pinterest.com/"><i
-                        class="fab fa-pinterest fa-2x"></i></a>
+            <section class="redes-web">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="http://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp fa-2x"></i></a>
+                <a href="https://ar.pinterest.com/"><i class="fab fa-pinterest fa-2x"></i></a>
             </section>
         </div>
     </footer>
