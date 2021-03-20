@@ -5,9 +5,92 @@
 
 /*
 *
-*CLASES
+* Etiquetas sin clase
 *
 */
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+
+    @media screen and (min-width: 1000px) {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+
+    @media screen and (min-width: 1000px) {
+        font-size: 2rem;
+    }
+}
+
+p {
+    font: {
+        family: $fuente_2;
+        size: 0.8rem;
+    }
+
+    padding: .2rem;
+    margin: 0 .1rem;
+
+    @media screen and (min-width: 1000px) {
+        font-size: 1rem;
+    }
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+iframe {
+    max-width: 100%;
+    margin: .5rem auto;
+}
+
+details {
+    line-height: 1.5rem;
+    text-align: justify;
+    text-justify: auto;
+    color: black;
+    font: {
+        size: .8rem;
+        family: $fuente_1;
+    }
+    ul {
+        list-style-position: inside;
+        list-style-type: disc;
+        margin: .1rem;
+        padding: .2rem;
+    }
+
+    @media screen and (min-width: 1000px) {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+}
+
+/*
+*
+* CLASES GENERALES
+*
+*/
+
+.contenedor {
+    @media screen and (min-width: 1000px) {
+        max-width: 1600px;
+    }
+}
 
 .titulos {
     @extend %headers;
@@ -22,8 +105,13 @@
         size: .8rem;
         family: $fuente_1;
     }
-    padding: 0.2rem;
-    margin: .5rem 0.2rem;
+    padding: .2rem;
+    margin: .5rem .2rem;
+
+    @media screen and (min-width: 1000px) {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
 }
 
 .separador {
@@ -33,33 +121,6 @@
     background-position: center;
     height: 10vh;
     margin: 1rem auto;
-}
-
-.a-ovillo {
-    display: block;
-    margin: auto;
-}
-
-.btn-descargas {
-    background-color: $color_2;
-    color: black;
-    font: {
-        family: $fuente_1;
-        size: .8rem;
-    }
-    margin: auto;
-    width: fit-content;
-
-    &:hover {
-        background-color: $color_3;
-        color: $color_1;
-    }
-}
-
-.foto_who {
-    border-radius: 1rem;
-    object-fit: contain;
-    margin: auto;
 }
 
 .popover-body {
@@ -72,7 +133,7 @@
 
 /*
 *
-*Estilos para el header y el menu
+* Estilos para el header y el menu
 *
 */
 
@@ -102,16 +163,20 @@
         
     .menu-lista {
         @include flex(column, nowrap, stretch, center);
-        
+
+        @media screen and (min-width: 1000px) {
+            @include flex (row, wrap, center, center);
+        }
+
         .menu-item {
             list-style-position: inside;
             list-style-type: none;
             background-color: $color_2;
             width: fit-content;
             margin: .1rem;
-            border-radius: 0 5px;
+            border-radius: 0 .4rem;
             align-self: center;
-            padding: 0.2rem;
+            padding: .2rem;
             flex: 1;
             
             a {
@@ -119,7 +184,7 @@
                 letter-spacing: 1px;
                 line-height: 1rem;
                 font: {
-                    size: 0.8rem;
+                    size: .8rem;
                     family: $fuente_1;
                 }
             
@@ -134,6 +199,18 @@
                 &:hover {
                     color: $color_1;
                 }
+
+                @media screen and (min-width: 1000px) {
+                    font-size: .9rem;
+                }
+            }
+
+            @media screen and (min-width: 1000px) {
+                text-align: center;
+                background-color: $color_2;
+                padding: .3rem;
+                margin: 0 .2rem;
+                border-radius: 1rem;
             }
         }
     }
@@ -141,7 +218,7 @@
 
 /*
 *
-*Estilos redes
+* Estilos redes flotantes
 *
 */
 
@@ -155,182 +232,28 @@
     img:hover {
         transform: scale(1.1);
     }
-}
 
-/*
-*
-*Estilos para carrusel
-*
-*/
-
-.carr-in {
-    margin: auto;
-    height: fit-content;
-    overflow: hidden;
-    
-    .c-item {
-        img {
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-        }
-    }
-}
-
-/*
-*
-*Estilo para las cartas descriptivas de los productos
-*
-*
-*/
-
-.descripcion {
-    @include flex (row, wrap, space-around, top);
-    .cartas {
-        width: 30rem;
-        max-width: 90%;
-        margin: .5rem;
-        height: fit-content;
-        font: {
-            family: $fuente_1;
-            size: .8rem;
-        }
-        text-align: center;
-
-        .card-tit {
-            font-weight: bold;
-        }
-    }
-}
-
-/*
-*
-*Estilo para GALERIA DE PRODUCTOS
-*
-*/
-
-.galeria-prod {
-    @include flex (row, wrap, space-around, center);
-    padding: 1rem;
-    width: fit-content;
-    margin: .5rem auto;
-
-    img {
-        width: 300px;
-        max-width: 100%;
-        height: 300px;
-        object-fit: cover;
-        margin: .5rem;
-        transition: transform 5s;
-        border-radius: 1rem;
-        cursor: pointer;
-
-        &:hover {
-            border-radius:50%;
-            box-shadow: 0px 0px 15px 15px $color_1;
-            //transform: scale(1.1);
-        }
-    }
-}
-
-/* Modales galeria */
-
-.mod-h {
-    padding: .2rem;
-    padding-right: .6rem;
-}
-
-.mod-b {
-    background-color: $color_1;
-    padding: .8rem;
-
-    img {
-        border-radius: 2rem;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .btn-modal {
-        margin-left: 1rem;
-        margin-top: 3rem;
+    @media screen and (min-width: 1000px) {
         position: fixed;
         z-index: 1;
-        font-family: $fuente_1;
+        top: 12rem;
+        left: .1rem;
+        display: block;
+        width: 2pc;
+        height: 25vh;
+        line-height: 2pc;
+        padding: .1rem;
+        cursor: hand;
 
-        &:hover {
-            background-color: $color_2;
+        img:hover {
+            transform: translateX(.2rem);
         }
     }
 }
 
 /*
 *
-*Estilos en SERVICIOS
-*
-*/
-
-/*
-*
-*Estilos para el FORMULARIO DE CONTACTO
-*
-*/
-
-.formulario {
-    .grupo-formulario {
-        margin: 0 auto;
-        font: {
-            size: .8rem;
-            family: $fuente_1;
-        }
-
-        .form-check {
-            .tic {
-                position: relative;
-                margin-top: .3rem;
-                margin-left: .1rem;
-            }
-        }
-
-        .ctrl-formulario {
-            height: calc(1.4em + .5rem + 2px);
-            width: 85%;
-            margin-left: 3px;
-            font-size: .9rem;
-        }
-
-        article {
-            margin: .2rem;
-            padding: .1rem;
-        }
-
-        fieldset {
-            margin: .1rem;
-            padding: .1rem;
-            width: 50%;
-        }
-
-        textarea {
-            margin: .2rem auto;
-            padding: .1rem;
-            max-width: 80%;
-            min-height: 25vh;
-        }
-    }
-
-    .btn-enviar {
-        background-color: $color_5;
-        font-size: .8rem;
-    }
-
-    .btn-borrar {
-        background-color: $color_6;
-        font-size: .8rem;
-    }
-}
-
-/*
-*
-*Estilos para el FOOTER
+* Estilos para el footer
 *
 */
 
@@ -357,6 +280,10 @@
                 &:visited {
                     color: currentColor;
                 }
+
+                @media screen and (min-width: 1000px) {
+                    padding: 1rem;
+                }
             }
         }
 
@@ -372,169 +299,121 @@
                 color: currentColor;
             }
         }
-    }
-}
 
-/*
-*
-*Otras Etiquetas
-*
-*/
+        @media screen and (min-width: 1000px) {
+            @include grid (repeat(2, 1fr), (.5fr, 1fr), .5rem);
+            grid-template-areas:
+                "flecha flecha"
+                "datos redes";
+            height: auto;
 
-html {
-    scroll-behavior: smooth;
-}
+            .ancla-up {
+                grid-area: flecha;
+            }
 
-main {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-}
+            .datos-web {
+                grid-area: datos;
+            }
 
-h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    width: max-content;
-    max-width: 90%;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-p {
-    font: {
-        family: $fuente_2;
-        size: 0.8rem;
-    }
-
-    padding: .2rem;
-    margin: 0 .1rem;
-}
-
-span {
-    font-style: italic;
-    font-weight: bold;
-}
-
-iframe {
-    max-width: 100%;
-    margin: .5rem auto;
-}
-
-details {
-    line-height: 1.5rem;
-    text-align: justify;
-    text-justify: auto;
-    color: black;
-    font: {
-        size: .8rem;
-        family: $fuente_1;
-    }
-    ul {
-        list-style-position: inside;
-        list-style-type: disc;
-        margin: .1rem;
-        padding: .2rem;
-    }
-}
-
-/*
-*
-* MEDIA QUERIES
-*
-*/
-
-@media screen and (min-width: 1000px) {
-
-    .contenedor {
-        max-width: 1600px;
-    }
-
-    .parrafos-ppales {
-        line-height: 2rem;
-        font-size: 1rem;
-    }
-
-    /*
-    *
-    *Estilos para el header y el menu
-    *
-    */
-
-    .desplegable {
-        .menu-lista {
-            @include flex (row, wrap, center, center);
-            
-            .menu-item {
-                text-align: center;
-                background-color: $color_2;
-                padding: .3rem;
-                margin: 0 .2rem;
-                border-radius: 20px;
-            
-                a {
-                    font-size: .9rem;
-                }
+            .redes-web {
+                grid-area: redes;
             }
         }
     }
+}
 
-    /*
-    *
-    *Estilos redes flotantes
-    *
-    */
+/*
+*
+* INDEX/HOME
+*
+*/
 
-    .redes-flotantes {
-        position: fixed;
-        z-index: 1;
-        top: 12rem;
-        left: .1rem;
-        display: block;
-        width: 2pc;
-        height: 25vh;
-        line-height: 2pc;
-        padding: .1rem;
-        cursor: hand;
+/* Estilos para el carrusel */
 
-        img:hover {
-            transform: translateX(.2rem);
-        }
-    }
+.carr-in {
+    margin: auto;
+    height: fit-content;
+    overflow: hidden;
+    
+    .c-item {
+        img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
 
-    /*
-    *
-    *Estilos para carrusel
-    *
-    */
-
-    .carr-in {
-        background-color: $color_1;
-        width: 90%;
-
-        .c-item {
-            img {
+            @media screen and (min-width: 1000px) {
                 height: 80vh;
                 object-fit: contain;
             }
         }
     }
 
-    // estilo cartas descriptivas
+    @media screen and (min-width: 1000px) {
+        background-color: $color_1;
+        width: 90%;
+    }
+}
 
-    .descripcion {
-        .cartas {
+.a-ovillo {
+    display: block;
+    margin: auto;
+}
+
+/*
+*
+* PRODUCTOS
+*
+*/
+
+/* Estilos para las cartas descriptivas */
+
+.descripcion {
+    @include flex (row, wrap, space-around, top);
+    .cartas {
+        width: 30rem;
+        max-width: 90%;
+        margin: .5rem;
+        height: fit-content;
+        font: {
+            family: $fuente_1;
+            size: .8rem;
+        }
+        text-align: center;
+
+        .card-tit {
+            font-weight: bold;
+        }
+
+        @media screen and (min-width: 1000px) {
             font-size: 1rem;
         }
     }
+}
 
-    /*
-    *
-    *Estilo para GALERIA DE PRODUCTOS
-    *
-    */
+/* Estilos para la Galeria */
 
-    .galeria-prod {
+.galeria-prod {
+    @include flex (row, wrap, space-around, center);
+    padding: 1rem;
+    width: fit-content;
+    margin: .5rem auto;
+
+    img {
+        width: 300px;
+        max-width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 1rem;
+        margin: .5rem;
+        cursor: pointer;
+
+        &:hover {
+            border-radius:50%;
+            box-shadow: 0px 0px 15px 15px $color_1;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
         @include grid (repeat(3, 1fr), repeat(4, 1fr), 1rem);
         grid-template-areas:
             "mariposas perro pulpos"
@@ -591,78 +470,138 @@ details {
             grid-area: celeste;
         }
     }
+}
 
-    /*
-    *
-    *Estilos para el FORMULARIO DE CONTACTO
-    *
-    */
+/* Estilos para los modales de la Galeria */
 
-    .formulario {
-        .grupo-formulario {
-            fieldset {
+.mod-h {
+    padding: .2rem;
+    padding-right: .6rem;
+}
+
+.mod-b {
+    background-color: $color_1;
+    padding: .8rem;
+
+    img {
+        border-radius: 2rem;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .btn-modal {
+        position: fixed;
+        z-index: 1;
+        margin-left: 1rem;
+        margin-top: 3rem;
+        font-family: $fuente_1;
+
+        &:hover {
+            background-color: $color_2;
+        }
+    }
+}
+
+/*
+*
+* SERVICIOS
+*
+*/
+
+.btn-descargas {
+    background-color: $color_2;
+    color: black;
+    font: {
+        family: $fuente_1;
+        size: .8rem;
+    }
+    margin: auto;
+    width: fit-content;
+
+    &:hover {
+        background-color: $color_3;
+        color: $color_1;
+    }
+}
+
+/*
+*
+* QUIENES SOMOS
+*
+*/
+
+.foto_who {
+    border-radius: 1rem;
+    object-fit: contain;
+    margin: auto;
+}
+
+/*
+*
+* CONTACTO
+*
+*/
+
+/* Estilos para el Formulario */
+
+.formulario {
+    .grupo-formulario {
+        margin: 0 auto;
+        font: {
+            size: .8rem;
+            family: $fuente_1;
+        }
+
+        .form-check {
+            .tic {
+                position: relative;
+                margin-top: .3rem;
+                margin-left: .1rem;
+            }
+        }
+
+        .ctrl-formulario {
+            height: calc(1.4em + .5rem + 2px);
+            width: 85%;
+            margin-left: 3px;
+            font-size: .9rem;
+        }
+
+        article {
+            margin: .2rem;
+            padding: .1rem;
+        }
+
+        fieldset {
+            margin: .1rem;
+            padding: .1rem;
+            width: 50%;
+
+            @media screen and (min-width: 1000px) {
                 margin: .2rem;
                 width: 30%;
             }
+        }
 
-            textarea {
+        textarea {
+            margin: .2rem auto;
+            padding: .1rem;
+            max-width: 80%;
+            min-height: 25vh;
+
+            @media screen and (min-width: 1000px) {
                 max-width: 50%;
             }
         }
     }
 
-    /*
-    *
-    *Estilos para el FOOTER
-    *
-    */
-
-    .pie {
-        .contenedor {
-            @include grid (repeat(2, 1fr), (.5fr, 1fr), .5rem);
-            grid-template-areas:
-                "flecha flecha"
-                "datos redes";
-            height: auto;
-
-            .ancla-up {
-                grid-area: flecha;
-            }
-
-            .datos-web {
-                grid-area: datos;
-            }
-
-            .redes-web {
-                grid-area: redes;
-
-                a {
-                    padding: 1rem;
-                }
-            }
-        }
+    .btn-enviar {
+        background-color: $color_4;
+        font-size: .8rem;
     }
 
-    /*
-    *
-    *Otras Etiquetas
-    *
-    */
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    details {
-        line-height: 2rem;
-        font-size: 1rem;
+    .btn-borrar {
+        background-color: $color_5;
+        font-size: .8rem;
     }
 }

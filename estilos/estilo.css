@@ -17,282 +17,11 @@
   font-family: "Cormorant Garamond", serif;
   font-weight: normal;
   font-style: italic;
-  padding: 0 .25rem; }
+  padding: .25rem; }
 
 /*
 *
-*CLASES
-*
-*/
-.parrafos-ppales {
-  line-height: 1.5rem;
-  text-align: justify;
-  text-justify: auto;
-  color: black;
-  font-size: .8rem;
-  font-family: "Montserrat", sans-serif;
-  padding: 0.2rem;
-  margin: .5rem 0.2rem; }
-
-.separador {
-  background-image: url("../imagenes/bg.jpg");
-  background-repeat: repeat-x;
-  background-size: contain;
-  background-position: center;
-  height: 10vh;
-  margin: 1rem auto; }
-
-.a-ovillo {
-  display: block;
-  margin: auto; }
-
-.btn-descargas {
-  background-color: #0000001a;
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: .8rem;
-  margin: auto;
-  width: fit-content; }
-  .btn-descargas:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #f8d5d5; }
-
-.foto_who {
-  border-radius: 1rem;
-  object-fit: contain;
-  margin: auto; }
-
-.popover-body {
-  margin: auto;
-  font-size: .8rem;
-  font-family: "Montserrat", sans-serif; }
-
-/*
-*
-*Estilos para el header y el menu
-*
-*/
-.barra {
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: .25rem 1rem;
-  background-color: white; }
-  .barra .contenedor .ancla-logo .logo {
-    height: 75px;
-    width: 75px; }
-  .barra .boton-nav {
-    padding: .3rem;
-    font-size: 1rem; }
-
-.desplegable {
-  background-color: white; }
-  .desplegable .menu-lista {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: stretch;
-    align-items: center; }
-    .desplegable .menu-lista .menu-item {
-      list-style-position: inside;
-      list-style-type: none;
-      background-color: #0000001a;
-      width: fit-content;
-      margin: .1rem;
-      border-radius: 0 5px;
-      align-self: center;
-      padding: 0.2rem;
-      flex: 1; }
-      .desplegable .menu-lista .menu-item a {
-        text-decoration: none;
-        letter-spacing: 1px;
-        line-height: 1rem;
-        font-size: 0.8rem;
-        font-family: "Montserrat", sans-serif; }
-        .desplegable .menu-lista .menu-item a:link {
-          color: black; }
-        .desplegable .menu-lista .menu-item a:visited {
-          color: currentColor; }
-        .desplegable .menu-lista .menu-item a:hover {
-          color: #f8d5d5; }
-
-/*
-*
-*Estilos redes
-*
-*/
-.redes-flotantes {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  line-height: 2pc;
-  margin: 1rem auto;
-  padding: .1rem;
-  cursor: hand; }
-  .redes-flotantes img:hover {
-    transform: scale(1.1); }
-
-/*
-*
-*Estilos para carrusel
-*
-*/
-.carr-in {
-  margin: auto;
-  height: fit-content;
-  overflow: hidden; }
-  .carr-in .c-item img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover; }
-
-/*
-*
-*Estilo para las cartas descriptivas de los productos
-*
-*
-*/
-.descripcion {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: top; }
-  .descripcion .cartas {
-    width: 30rem;
-    max-width: 90%;
-    margin: .5rem;
-    height: fit-content;
-    font-family: "Montserrat", sans-serif;
-    font-size: .8rem;
-    text-align: center; }
-    .descripcion .cartas .card-tit {
-      font-weight: bold; }
-
-/*
-*
-*Estilo para GALERIA DE PRODUCTOS
-*
-*/
-.galeria-prod {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  width: fit-content;
-  margin: .5rem auto; }
-  .galeria-prod img {
-    width: 300px;
-    max-width: 100%;
-    height: 300px;
-    object-fit: cover;
-    margin: .5rem;
-    transition: transform 5s;
-    border-radius: 1rem;
-    cursor: pointer; }
-    .galeria-prod img:hover {
-      border-radius: 50%;
-      box-shadow: 0px 0px 15px 15px #f8d5d5; }
-
-/* Modales galeria */
-.mod-h {
-  padding: .2rem;
-  padding-right: .6rem; }
-
-.mod-b {
-  background-color: #f8d5d5;
-  padding: .8rem; }
-  .mod-b img {
-    border-radius: 2rem;
-    object-fit: cover;
-    width: 100%; }
-  .mod-b .btn-modal {
-    margin-left: 1rem;
-    margin-top: 3rem;
-    position: fixed;
-    z-index: 1;
-    font-family: "Montserrat", sans-serif; }
-    .mod-b .btn-modal:hover {
-      background-color: #0000001a; }
-
-/*
-*
-*Estilos en SERVICIOS
-*
-*/
-/*
-*
-*Estilos para el FORMULARIO DE CONTACTO
-*
-*/
-.formulario .grupo-formulario {
-  margin: 0 auto;
-  font-size: .8rem;
-  font-family: "Montserrat", sans-serif; }
-  .formulario .grupo-formulario .form-check .tic {
-    position: relative;
-    margin-top: .3rem;
-    margin-left: .1rem; }
-  .formulario .grupo-formulario .ctrl-formulario {
-    height: calc(1.4em + .5rem + 2px);
-    width: 85%;
-    margin-left: 3px;
-    font-size: .9rem; }
-  .formulario .grupo-formulario article {
-    margin: .2rem;
-    padding: .1rem; }
-  .formulario .grupo-formulario fieldset {
-    margin: .1rem;
-    padding: .1rem;
-    width: 50%; }
-  .formulario .grupo-formulario textarea {
-    margin: .2rem auto;
-    padding: .1rem;
-    max-width: 80%;
-    min-height: 25vh; }
-
-.formulario .btn-enviar {
-  background-color: #b0f6f2;
-  font-size: .8rem; }
-
-.formulario .btn-borrar {
-  background-color: #ff8084;
-  font-size: .8rem; }
-
-/*
-*
-*Estilos para el FOOTER
-*
-*/
-.pie {
-  background-color: #f8d5d5;
-  font-style: italic;
-  margin-top: 1rem; }
-  .pie .contenedor {
-    padding: .2rem; }
-    .pie .contenedor .redes-web {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: 0 auto; }
-      .pie .contenedor .redes-web a {
-        margin: auto;
-        padding: .5rem; }
-        .pie .contenedor .redes-web a:link {
-          color: black; }
-        .pie .contenedor .redes-web a:visited {
-          color: currentColor; }
-    .pie .contenedor .ancla-up {
-      margin: auto;
-      padding: .5rem; }
-      .pie .contenedor .ancla-up:link {
-        color: black; }
-      .pie .contenedor .ancla-up:visited {
-        color: currentColor; }
-
-/*
-*
-*Otras Etiquetas
+* Etiquetas sin clase
 *
 */
 html {
@@ -303,19 +32,25 @@ main {
   margin-bottom: 2rem; }
 
 h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  width: max-content;
-  max-width: 90%; }
+  font-size: 2rem; }
+  @media screen and (min-width: 1000px) {
+    h1 {
+      font-size: 3rem; } }
 
 h2 {
   font-size: 1.5rem; }
+  @media screen and (min-width: 1000px) {
+    h2 {
+      font-size: 2rem; } }
 
 p {
   font-family: "Cormorant Garamond", serif;
   font-size: 0.8rem;
   padding: .2rem;
   margin: 0 .1rem; }
+  @media screen and (min-width: 1000px) {
+    p {
+      font-size: 1rem; } }
 
 span {
   font-style: italic;
@@ -337,144 +72,385 @@ details {
     list-style-type: disc;
     margin: .1rem;
     padding: .2rem; }
+  @media screen and (min-width: 1000px) {
+    details {
+      line-height: 2rem;
+      font-size: 1rem; } }
 
 /*
 *
-* MEDIA QUERIES
+* CLASES GENERALES
 *
 */
 @media screen and (min-width: 1000px) {
   .contenedor {
-    max-width: 1600px; }
-  .parrafos-ppales {
-    line-height: 2rem;
+    max-width: 1600px; } }
+
+.parrafos-ppales {
+  line-height: 1.5rem;
+  text-align: justify;
+  text-justify: auto;
+  color: black;
+  font-size: .8rem;
+  font-family: "Montserrat", sans-serif;
+  padding: .2rem;
+  margin: .5rem .2rem; }
+  @media screen and (min-width: 1000px) {
+    .parrafos-ppales {
+      line-height: 2rem;
+      font-size: 1rem; } }
+
+.separador {
+  background-image: url("../imagenes/bg.jpg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  height: 10vh;
+  margin: 1rem auto; }
+
+.popover-body {
+  margin: auto;
+  font-size: .8rem;
+  font-family: "Montserrat", sans-serif; }
+
+/*
+*
+* Estilos para el header y el menu
+*
+*/
+.barra {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: .25rem 1rem;
+  background-color: white; }
+  .barra .contenedor .ancla-logo .logo {
+    height: 75px;
+    width: 75px; }
+  .barra .boton-nav {
+    padding: .3rem;
     font-size: 1rem; }
-  /*
-    *
-    *Estilos para el header y el menu
-    *
-    */
+
+.desplegable {
+  background-color: white; }
   .desplegable .menu-lista {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: stretch;
     align-items: center; }
+    @media screen and (min-width: 1000px) {
+      .desplegable .menu-lista {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center; } }
     .desplegable .menu-lista .menu-item {
-      text-align: center;
+      list-style-position: inside;
+      list-style-type: none;
       background-color: #0000001a;
-      padding: .3rem;
-      margin: 0 .2rem;
-      border-radius: 20px; }
+      width: fit-content;
+      margin: .1rem;
+      border-radius: 0 .4rem;
+      align-self: center;
+      padding: .2rem;
+      flex: 1; }
       .desplegable .menu-lista .menu-item a {
-        font-size: .9rem; }
-  /*
-    *
-    *Estilos redes flotantes
-    *
-    */
-  .redes-flotantes {
+        text-decoration: none;
+        letter-spacing: 1px;
+        line-height: 1rem;
+        font-size: .8rem;
+        font-family: "Montserrat", sans-serif; }
+        .desplegable .menu-lista .menu-item a:link {
+          color: black; }
+        .desplegable .menu-lista .menu-item a:visited {
+          color: currentColor; }
+        .desplegable .menu-lista .menu-item a:hover {
+          color: #f8d5d5; }
+        @media screen and (min-width: 1000px) {
+          .desplegable .menu-lista .menu-item a {
+            font-size: .9rem; } }
+      @media screen and (min-width: 1000px) {
+        .desplegable .menu-lista .menu-item {
+          text-align: center;
+          background-color: #0000001a;
+          padding: .3rem;
+          margin: 0 .2rem;
+          border-radius: 1rem; } }
+
+/*
+*
+* Estilos redes flotantes
+*
+*/
+.redes-flotantes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 2pc;
+  margin: 1rem auto;
+  padding: .1rem;
+  cursor: hand; }
+  .redes-flotantes img:hover {
+    transform: scale(1.1); }
+  @media screen and (min-width: 1000px) {
+    .redes-flotantes {
+      position: fixed;
+      z-index: 1;
+      top: 12rem;
+      left: .1rem;
+      display: block;
+      width: 2pc;
+      height: 25vh;
+      line-height: 2pc;
+      padding: .1rem;
+      cursor: hand; }
+      .redes-flotantes img:hover {
+        transform: translateX(0.2rem); } }
+
+/*
+*
+* Estilos para el footer
+*
+*/
+.pie {
+  background-color: #f8d5d5;
+  font-style: italic;
+  margin-top: 1rem; }
+  .pie .contenedor {
+    padding: .2rem; }
+    .pie .contenedor .redes-web {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0 auto; }
+      .pie .contenedor .redes-web a {
+        margin: auto;
+        padding: .5rem; }
+        .pie .contenedor .redes-web a:link {
+          color: black; }
+        .pie .contenedor .redes-web a:visited {
+          color: currentColor; }
+        @media screen and (min-width: 1000px) {
+          .pie .contenedor .redes-web a {
+            padding: 1rem; } }
+    .pie .contenedor .ancla-up {
+      margin: auto;
+      padding: .5rem; }
+      .pie .contenedor .ancla-up:link {
+        color: black; }
+      .pie .contenedor .ancla-up:visited {
+        color: currentColor; }
+    @media screen and (min-width: 1000px) {
+      .pie .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr, 1fr;
+        gap: 0.5rem;
+        grid-template-areas: "flecha flecha" "datos redes";
+        height: auto; }
+        .pie .contenedor .ancla-up {
+          grid-area: flecha; }
+        .pie .contenedor .datos-web {
+          grid-area: datos; }
+        .pie .contenedor .redes-web {
+          grid-area: redes; } }
+
+/*
+*
+* INDEX/HOME
+*
+*/
+/* Estilos para el carrusel */
+.carr-in {
+  margin: auto;
+  height: fit-content;
+  overflow: hidden; }
+  .carr-in .c-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; }
+    @media screen and (min-width: 1000px) {
+      .carr-in .c-item img {
+        height: 80vh;
+        object-fit: contain; } }
+  @media screen and (min-width: 1000px) {
+    .carr-in {
+      background-color: #f8d5d5;
+      width: 90%; } }
+
+.a-ovillo {
+  display: block;
+  margin: auto; }
+
+/*
+*
+* PRODUCTOS
+*
+*/
+/* Estilos para las cartas descriptivas */
+.descripcion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: top; }
+  .descripcion .cartas {
+    width: 30rem;
+    max-width: 90%;
+    margin: .5rem;
+    height: fit-content;
+    font-family: "Montserrat", sans-serif;
+    font-size: .8rem;
+    text-align: center; }
+    .descripcion .cartas .card-tit {
+      font-weight: bold; }
+    @media screen and (min-width: 1000px) {
+      .descripcion .cartas {
+        font-size: 1rem; } }
+
+/* Estilos para la Galeria */
+.galeria-prod {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  width: fit-content;
+  margin: .5rem auto; }
+  .galeria-prod img {
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: .5rem;
+    cursor: pointer; }
+    .galeria-prod img:hover {
+      border-radius: 50%;
+      box-shadow: 0px 0px 15px 15px #f8d5d5; }
+  @media screen and (min-width: 1000px) {
+    .galeria-prod {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 1rem;
+      grid-template-areas: "mariposas perro pulpos" "rana unicornio-1 ma" "jirafa tortugas zorro" "pica trapo celeste";
+      height: auto; }
+      .galeria-prod .gp-mariposas {
+        grid-area: mariposas; }
+      .galeria-prod .gp-perrito {
+        grid-area: perro; }
+      .galeria-prod .gp-pulpos {
+        grid-area: pulpos; }
+      .galeria-prod .gp-rana {
+        grid-area: rana; }
+      .galeria-prod .gp-unicornio {
+        grid-area: unicornio-1; }
+      .galeria-prod .gp-marad {
+        grid-area: ma; }
+      .galeria-prod .gp-jirafa {
+        grid-area: jirafa; }
+      .galeria-prod .gp-tortugas {
+        grid-area: tortugas; }
+      .galeria-prod .gp-zorro {
+        grid-area: zorro; }
+      .galeria-prod .gp-picaportero {
+        grid-area: pica; }
+      .galeria-prod .gp-mtrapo {
+        grid-area: trapo; }
+      .galeria-prod .gp-u-celeste {
+        grid-area: celeste; } }
+
+/* Estilos para los modales de la Galeria */
+.mod-h {
+  padding: .2rem;
+  padding-right: .6rem; }
+
+.mod-b {
+  background-color: #f8d5d5;
+  padding: .8rem; }
+  .mod-b img {
+    border-radius: 2rem;
+    object-fit: cover;
+    width: 100%; }
+  .mod-b .btn-modal {
     position: fixed;
     z-index: 1;
-    top: 12rem;
-    left: .1rem;
-    display: block;
-    width: 2pc;
-    height: 25vh;
-    line-height: 2pc;
-    padding: .1rem;
-    cursor: hand; }
-    .redes-flotantes img:hover {
-      transform: translateX(0.2rem); }
-  /*
-    *
-    *Estilos para carrusel
-    *
-    */
-  .carr-in {
-    background-color: #f8d5d5;
-    width: 90%; }
-    .carr-in .c-item img {
-      height: 80vh;
-      object-fit: contain; }
-  .descripcion .cartas {
-    font-size: 1rem; }
-  /*
-    *
-    *Estilo para GALERIA DE PRODUCTOS
-    *
-    */
-  .galeria-prod {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 1rem;
-    grid-template-areas: "mariposas perro pulpos" "rana unicornio-1 ma" "jirafa tortugas zorro" "pica trapo celeste";
-    height: auto; }
-    .galeria-prod .gp-mariposas {
-      grid-area: mariposas; }
-    .galeria-prod .gp-perrito {
-      grid-area: perro; }
-    .galeria-prod .gp-pulpos {
-      grid-area: pulpos; }
-    .galeria-prod .gp-rana {
-      grid-area: rana; }
-    .galeria-prod .gp-unicornio {
-      grid-area: unicornio-1; }
-    .galeria-prod .gp-marad {
-      grid-area: ma; }
-    .galeria-prod .gp-jirafa {
-      grid-area: jirafa; }
-    .galeria-prod .gp-tortugas {
-      grid-area: tortugas; }
-    .galeria-prod .gp-zorro {
-      grid-area: zorro; }
-    .galeria-prod .gp-picaportero {
-      grid-area: pica; }
-    .galeria-prod .gp-mtrapo {
-      grid-area: trapo; }
-    .galeria-prod .gp-u-celeste {
-      grid-area: celeste; }
-  /*
-    *
-    *Estilos para el FORMULARIO DE CONTACTO
-    *
-    */
-  .formulario .grupo-formulario fieldset {
+    margin-left: 1rem;
+    margin-top: 3rem;
+    font-family: "Montserrat", sans-serif; }
+    .mod-b .btn-modal:hover {
+      background-color: #0000001a; }
+
+/*
+*
+* SERVICIOS
+*
+*/
+.btn-descargas {
+  background-color: #0000001a;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: .8rem;
+  margin: auto;
+  width: fit-content; }
+  .btn-descargas:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #f8d5d5; }
+
+/*
+*
+* QUIENES SOMOS
+*
+*/
+.foto_who {
+  border-radius: 1rem;
+  object-fit: contain;
+  margin: auto; }
+
+/*
+*
+* CONTACTO
+*
+*/
+/* Estilos para el Formulario */
+.formulario .grupo-formulario {
+  margin: 0 auto;
+  font-size: .8rem;
+  font-family: "Montserrat", sans-serif; }
+  .formulario .grupo-formulario .form-check .tic {
+    position: relative;
+    margin-top: .3rem;
+    margin-left: .1rem; }
+  .formulario .grupo-formulario .ctrl-formulario {
+    height: calc(1.4em + .5rem + 2px);
+    width: 85%;
+    margin-left: 3px;
+    font-size: .9rem; }
+  .formulario .grupo-formulario article {
     margin: .2rem;
-    width: 30%; }
+    padding: .1rem; }
+  .formulario .grupo-formulario fieldset {
+    margin: .1rem;
+    padding: .1rem;
+    width: 50%; }
+    @media screen and (min-width: 1000px) {
+      .formulario .grupo-formulario fieldset {
+        margin: .2rem;
+        width: 30%; } }
   .formulario .grupo-formulario textarea {
-    max-width: 50%; }
-  /*
-    *
-    *Estilos para el FOOTER
-    *
-    */
-  .pie .contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr, 1fr;
-    gap: 0.5rem;
-    grid-template-areas: "flecha flecha" "datos redes";
-    height: auto; }
-    .pie .contenedor .ancla-up {
-      grid-area: flecha; }
-    .pie .contenedor .datos-web {
-      grid-area: datos; }
-    .pie .contenedor .redes-web {
-      grid-area: redes; }
-      .pie .contenedor .redes-web a {
-        padding: 1rem; }
-  /*
-    *
-    *Otras Etiquetas
-    *
-    */
-  h1 {
-    font-size: 3rem; }
-  h2 {
-    font-size: 2rem; }
-  p {
-    font-size: 1rem; }
-  details {
-    line-height: 2rem;
-    font-size: 1rem; } }
+    margin: .2rem auto;
+    padding: .1rem;
+    max-width: 80%;
+    min-height: 25vh; }
+    @media screen and (min-width: 1000px) {
+      .formulario .grupo-formulario textarea {
+        max-width: 50%; } }
+
+.formulario .btn-enviar {
+  background-color: #b0f6f2;
+  font-size: .8rem; }
+
+.formulario .btn-borrar {
+  background-color: #ff8084;
+  font-size: .8rem; }
